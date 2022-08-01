@@ -13,8 +13,8 @@ export default function checkWinner(blocks) {
   for (let i = 0; i < winningPatterns.length; i++) {
     const [a, b, c] = winningPatterns[i];
     if (blocks[a] && blocks[a] === blocks[b] && blocks[a] === blocks[c]) {
-      return winningPatterns[a];
+      return winningPatterns[i];
     }
   }
-  return null;
+  return [];
 }
