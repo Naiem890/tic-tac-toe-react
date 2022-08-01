@@ -1,10 +1,11 @@
 import logo from "./logo.svg";
 import "./App.css";
+import TicTacToeBoard from "./components/TicTacToeBoard";
 
 function App() {
   return (
-    <div>
-      <h1 className="text-3xl font-bold underline">Hello world!</h1>
+    <div className="min-h-screen bg-slate-600 flex justify-center items-center">
+      <TicTacToeBoard />
     </div>
   );
 }
